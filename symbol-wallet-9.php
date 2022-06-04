@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WP Symbol Wallet
+Plugin Name: Symbol Wallet 9
 Description: A simple symbol wallet with SSS Extension.
 Author: curupo
 Version: 0.1
@@ -9,7 +9,7 @@ Version: 0.1
 // Description
 function admin_description()
 {
-  echo '<h1>WP Symbol Wallet</h1>';
+  echo '<h1>Symbol Wallet</h1>';
 
   echo '<h2 class="h-margin">Usage</h2>';
   echo '<blockquote>';
@@ -57,8 +57,8 @@ function admin_description()
   echo '  </div>';
   echo '</div>';
   echo '<script type="text/javascript" src="https://xembook.github.io/nem2-browserify/symbol-sdk-pack-1.0.3.js"></script>';
-  echo '<script type="text/javascript" src="' . get_site_url() . '/wp-content/plugins/wp-symbol-wallet/script.js"></script>';
-  echo '<link rel="stylesheet" href="' . get_site_url() . '/wp-content/plugins/wp-symbol-wallet/style.css" type="text/css">';
+  echo '<script type="text/javascript" src="' . get_site_url() . '/wp-content/plugins/symbol-wallet-9/script.js"></script>';
+  echo '<link rel="stylesheet" href="' . get_site_url() . '/wp-content/plugins/symbol-wallet-9/style.css" type="text/css">';
   echo '<h3 class="h-margin">Donate</h3>';
   echo '<p>Donations are welcome.</p>';
   echo '<blockquote>';
@@ -68,16 +68,16 @@ function admin_description()
 }
 
 // Wordpress Admin Menu
-function wp_symbol_wallet_setup_menu()
+function symbol_wallet_9_setup_menu()
 {
   add_menu_page(
-    __('WP Symbol Wallet Plugin', 'textdomain'), // Page title
+    __('Symbol Wallet Plugin', 'textdomain'), // Page title
     'Symbol Wallet', // Menu title
     'manage_options',
-    'wp-symbol-wallet', // Menu slug
+    'symbol-wallet-9', // Menu slug
     'admin_description', // Execute eunction
     'dashicons-shield-alt', // Menu icon
     30 // Menu display position
   );
 }
-add_action('admin_menu', 'wp_symbol_wallet_setup_menu');
+add_action('admin_menu', 'symbol_wallet_9_setup_menu');
