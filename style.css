@@ -1,0 +1,40 @@
+.account-card {
+  background: white;
+  border-radius: 12px;
+  margin: 12px;
+  padding: 12px;
+}
+
+.sender-card {
+  background: white;
+  border-radius: 12px;
+  margin: 12px;
+  padding: 12px;
+}
+
+.tx-card {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 12px;
+}
+
+.textfiled-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  margin: 8px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: start;
+}
+
+.h-margin {
+  margin-top: 36px;
+  padding-bottom: 8px;
+  border-bottom: solid 1px black;
+}
